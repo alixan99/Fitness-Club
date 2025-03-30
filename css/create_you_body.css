@@ -1,0 +1,12 @@
+.body {
+  background-color: #EBEBE9;
+}
+
+.body__logo {
+  position: relative;
+  top: -45px;
+}
+
+.body-description {
+  position: absolute;
+}

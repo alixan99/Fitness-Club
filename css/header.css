@@ -1,0 +1,21 @@
+.header {
+}
+
+.header__wrapper {
+  padding: 30px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation > button {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  padding: 11px 32px;
+}
