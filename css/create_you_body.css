@@ -4,9 +4,42 @@
 
 .body__logo {
   position: relative;
-  top: -45px;
+  right: -38px;
+  z-index: 10;
+}
+
+.body__title {
+  position: absolute;
+  top: 301px;
+  left: 479px;
+  font-size: 160px;
+  font-family: Arial-Black, sans-serif;
+  letter-spacing: 8px;
+  color: #CFCFCD
 }
 
 .body-description {
   position: absolute;
+  right: 291px;
+  bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  max-width: 587px;
+  gap: 14px;
+  align-items: start;
+}
+
+.body-description__text {
+  font-size: 20px;
+  font-family: Roboto-Medium, sans-serif;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.body-description__button {
+  padding: 11px 32px;
+  color: #292929;
+  font-size: 20px;
+  font-family: Roboto-Medium, sans-serif;
+  letter-spacing: 2px;
 }
