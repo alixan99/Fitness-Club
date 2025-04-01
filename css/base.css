@@ -1,0 +1,14 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}

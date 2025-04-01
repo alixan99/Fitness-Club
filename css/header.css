@@ -1,0 +1,26 @@
+.header {
+  background: linear-gradient(1800deg, #EBEBE9 0%, #EDEDEB 100%);
+  padding: 30px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__wrapper {
+  position: fixed;
+  display: flex;
+  gap: 512px;
+  z-index: 100;
+  align-items: center;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__navigation-list {
+  color: #292929;
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  padding: 11px 32px;
+}
