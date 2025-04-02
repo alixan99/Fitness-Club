@@ -2,16 +2,21 @@
   background-color: #EBEBE9;
 }
 
+.body__wrapper {
+  position: relative;
+}
+
 .body__logo {
   position: relative;
-  right: -38px;
+  left: -222px;
+  bottom: 0px;
   z-index: 10;
 }
 
 .body__title {
   position: absolute;
-  top: 301px;
-  left: 479px;
+  bottom: 377px;
+  left: 219px;
   font-size: 160px;
   font-family: Arial-Black, sans-serif;
   letter-spacing: 8px;
@@ -20,8 +25,8 @@
 
 .body-description {
   position: absolute;
-  right: 291px;
-  bottom: 130px;
+  left: 782px;
+  top: 498px;
   display: flex;
   flex-direction: column;
   max-width: 587px;
