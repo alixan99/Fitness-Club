@@ -1,19 +1,19 @@
-.body {
+.main {
   background-color: #EBEBE9;
 }
 
-.body__wrapper {
+.main__wrapper {
   position: relative;
 }
 
-.body__logo {
+.main__logo {
   position: relative;
   left: -222px;
   bottom: 0px;
   z-index: 10;
 }
 
-.body__title {
+.main__title {
   position: absolute;
   bottom: 377px;
   left: 219px;
@@ -23,7 +23,7 @@
   color: #CFCFCD
 }
 
-.body-description {
+.main__description {
   position: absolute;
   left: 782px;
   top: 498px;
@@ -34,17 +34,25 @@
   align-items: start;
 }
 
-.body-description__text {
+.description__text {
   font-size: 20px;
   font-family: Roboto-Medium, sans-serif;
   letter-spacing: 2px;
   color: #000000;
 }
 
-.body-description__button {
+.description__button {
   padding: 11px 32px;
   color: #292929;
   font-size: 20px;
   font-family: Roboto-Medium, sans-serif;
   letter-spacing: 2px;
+}
+
+.description__button:hover {
+  color: #FF8340;
+}
+
+.description__button:active {
+  color: #843500;
 }
