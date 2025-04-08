@@ -1,0 +1,34 @@
+.header {
+  background: linear-gradient(1800deg, #ebebe9 0%, #ededeb 100%);
+  padding: 30px 0 10px 0;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    position: fixed;
+    display: flex;
+    gap: 512px;
+    z-index: 100;
+    align-items: center;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      color: $color_default;
+      font-family: $font_roboto;
+      font-size: $font_size_low;
+      padding: 11px 32px;
+
+      &:hover {
+        color: $color_hover;
+      }
+
+      &:active {
+        color: $color_active;
+      }
+    }
+  }
+}

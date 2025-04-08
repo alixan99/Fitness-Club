@@ -1,0 +1,58 @@
+.main {
+  background-color: #ebebe9;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__logo {
+    position: relative;
+    left: -222px;
+    bottom: 0px;
+    z-index: 10;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 377px;
+    left: 219px;
+    font-size: 160px;
+    font-family: $font_arial;
+    letter-spacing: 8px;
+    color: #cfcfcd;
+  }
+
+  &__description {
+    position: absolute;
+    left: 782px;
+    top: 498px;
+    display: flex;
+    flex-direction: column;
+    max-width: 587px;
+    gap: 14px;
+    align-items: start;
+
+    &-inner {
+      font-size: $font_size_low;
+      font-family: $font_roboto;
+      letter-spacing: 2px;
+      color: #000000;
+    }
+
+    &-button {
+      padding: 11px 32px;
+      color: $color_default;
+      font-size: $font_size_low;
+      font-family: $font_roboto;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: $color_hover;
+      }
+
+      &:active {
+        color: $color_active;
+      }
+    }
+  }
+}
