@@ -101,6 +101,8 @@ button:hover {
 .header__navigation {
   display: flex;
   justify-content: space-between;
+  background: rgba(235, 235, 233, 0.7);
+  border-radius: 30px;
 }
 .header__navigation-item {
   color: #292929;
@@ -131,7 +133,7 @@ button:hover {
   position: absolute;
   bottom: 377px;
   left: 219px;
-  font-size: 160px;
+  font-size: clamp(100px, 9vw, 160px);
   font-family: Arial-Black, sans-serif;
   letter-spacing: 8px;
   color: #cfcfcd;
@@ -164,4 +166,51 @@ button:hover {
 }
 .main__description-button:active {
   color: #843500;
+}
+
+.art-wrapper {
+  position: relative;
+}
+.art-wrapper .art__title {
+  font-family: Arial-Black, sans-serif;
+  font-size: clamp(60px, 5vw, 80px);
+  position: absolute;
+  top: 169px;
+  line-height: 90px;
+}
+.art-wrapper .art__description {
+  position: absolute;
+  left: 206px;
+  top: 72px;
+  border: 6px solid #ff8340;
+  padding: 335px 27px 46px 25px;
+  max-width: 562px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 14px;
+}
+.art-wrapper .art__description-inner {
+  font-size: 20px;
+  font-family: Roboto-Medium, sans-serif;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.art-wrapper .art__description-button {
+  padding: 11px 32px;
+  color: #292929;
+  font-size: 20px;
+  font-family: Roboto-Medium, sans-serif;
+  letter-spacing: 2px;
+}
+.art-wrapper .art__description-button:hover {
+  color: #ff8340;
+}
+.art-wrapper .art__description-button:active {
+  color: #843500;
+}
+.art-wrapper .art__logo {
+  position: absolute;
+  top: 337px;
+  left: 602px;
 }/*# sourceMappingURL=style.css.map */

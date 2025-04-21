@@ -1,36 +1,23 @@
-.main {
-  background-color: #ebebe9;
-
-  &__wrapper {
-    position: relative;
-  }
-
-  &__logo {
-    position: relative;
-    left: -222px;
-    bottom: 0px;
-    z-index: 10;
-  }
-
-  &__title {
-    position: absolute;
-    bottom: 377px;
-    left: 219px;
-    font-size: clamp(100px, 9vw, 160px);
+.art-wrapper {
+  position: relative;
+  .art__title {
     font-family: $font_arial;
-    letter-spacing: 8px;
-    color: #cfcfcd;
-  }
-
-  &__description {
+    font-size: clamp(60px, 5vw, 80px);
     position: absolute;
-    left: 782px;
-    top: 498px;
+    top: 169px;
+    line-height: 90px;
+  }
+  .art__description {
+    position: absolute;
+    left: 206px;
+    top: 72px;
+    border: 6px solid $color_hover;
+    padding: 335px 27px 46px 25px;
+    max-width: 562px;
     display: flex;
     flex-direction: column;
-    max-width: 587px;
-    gap: 14px;
     align-items: start;
+    gap: 14px;
 
     &-inner {
       font-size: $font_size_low;
@@ -54,5 +41,10 @@
         color: $color_active;
       }
     }
+  }
+  .art__logo {
+    position: absolute;
+    top: 337px;
+    left: 602px;
   }
 }
