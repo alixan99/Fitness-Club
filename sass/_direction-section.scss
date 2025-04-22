@@ -1,0 +1,39 @@
+.direction {
+  background-color: $color_default;
+  padding: 124px 0 81px 0;
+
+  @media screen and (max-width: 952px) {
+    padding: 53px 0;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+    @media screen and (max-width: 952px) {
+      gap: 28px;
+    }
+
+    &__title {
+      color: #ffffff;
+      font-family: $font_arial;
+      font-size: clamp(60px, 5vw, 80px);
+      line-height: 160px;
+      letter-spacing: 4px;
+
+      @media screen and (max-width: 952px) {
+        line-height: 85px;
+        letter-spacing: 3px;
+      }
+    }
+
+    &__inner {
+      color: #ffffff;
+      font-family: $font_roboto;
+      font-size: $font_size_low;
+      letter-spacing: 2px;
+      line-height: 23px;
+    }
+  }
+}

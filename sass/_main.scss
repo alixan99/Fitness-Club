@@ -3,23 +3,38 @@
 
   &__wrapper {
     position: relative;
+    padding-top: 816px;
+
+    @media screen and (max-width: 952px) {
+      padding-top: 525px;
+    }
   }
 
   &__logo {
-    position: relative;
+    position: absolute;
     left: -222px;
     bottom: 0px;
     z-index: 10;
+
+    @media screen and (max-width: 952px) {
+      max-width: 624px;
+      left: -98px;
+    }
   }
 
   &__title {
     position: absolute;
     bottom: 377px;
     left: 219px;
-    font-size: 160px;
+    font-size: clamp(100px, 9vw, 160px);
     font-family: $font_arial;
     letter-spacing: 8px;
     color: #cfcfcd;
+
+    @media screen and (max-width: 952px) {
+      left: 66px;
+      top: 96px;
+    }
   }
 
   &__description {
@@ -31,6 +46,11 @@
     max-width: 587px;
     gap: 14px;
     align-items: start;
+
+    @media screen and (max-width: 952px) {
+      top: 110px;
+      left: 527px;
+    }
 
     &-inner {
       font-size: $font_size_low;
