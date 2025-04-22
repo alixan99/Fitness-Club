@@ -1,28 +1,79 @@
 .header {
   background: linear-gradient(1800deg, #ebebe9 0%, #ededeb 100%);
   padding: 30px 0 10px 0;
-  display: flex;
-  justify-content: center;
 
+  @media screen and (max-width: 952px){
+    padding: 16px 0 0 0;
+  }
+
+  &__img {
+    @media screen and (max-width: 952px) {
+      max-width: 111px;
+    }
+  }
   &__wrapper {
-    position: fixed;
     display: flex;
-    gap: 512px;
-    z-index: 100;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__navigation {
     display: flex;
     justify-content: space-between;
-    background: rgba(235, 235, 233, 0.7);
-    border-radius: 30px;
+
+    .hamburger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      background-color: #ffffff;
+      border: 1px solid #292929;
+      border-radius: 4px;
+
+      &__btn {
+        position: relative;
+        display: inline-block;
+        height: 3px;
+        width: 22px;
+        background-color: #292929;
+
+        &::before {
+          position: absolute;
+          right: 0px;
+          content: '';
+          height: 3px;
+          width: 22px;
+          bottom: 7px;
+          background-color: #292929;
+        }
+
+        &::after {
+          position: absolute;
+          left: 0px;
+          content: '';
+          height: 3px;
+          width: 22px;
+          top: 7px;
+          background-color: #292929;
+        }
+      }
+
+      @media screen and (min-width: 953px) {
+        display: none;
+      }
+    }
 
     &-item {
       color: $color_default;
       font-family: $font_roboto;
       font-size: $font_size_low;
       padding: 11px 32px;
+
+      @media screen and (max-width: 952px) {
+        display: none;
+      }
 
       &:hover {
         color: $color_hover;
