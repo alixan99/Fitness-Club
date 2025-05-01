@@ -60,9 +60,9 @@ a {
   max-width: 1400px;
   margin: 0 auto;
 }
-@media screen and (max-width: 952px) {
+@media screen and (max-width: 1440px) {
   .container {
-    max-width: 890px;
+    padding: 0 32px;
   }
 }
 
@@ -158,7 +158,7 @@ button:hover {
   color: #292929;
   font-family: Roboto-Medium, sans-serif;
   font-size: 20px;
-  padding: 11px 32px;
+  padding: 11px clamp(0px, 2vw, 32px);
 }
 @media screen and (max-width: 952px) {
   .header__navigation-item {
@@ -177,11 +177,11 @@ button:hover {
 }
 .main__wrapper {
   position: relative;
-  padding-top: 816px;
+  padding-top: 82px;
 }
 @media screen and (max-width: 952px) {
   .main__wrapper {
-    padding-top: 525px;
+    padding-top: 0px;
   }
 }
 .main__logo {
@@ -192,14 +192,12 @@ button:hover {
 }
 @media screen and (max-width: 952px) {
   .main__logo {
-    max-width: 624px;
-    left: -98px;
+    left: 0;
   }
 }
 .main__title {
-  position: absolute;
-  bottom: 377px;
-  left: 219px;
+  position: relative;
+  padding-left: clamp(97px, 7vw, 219px);
   font-size: clamp(100px, 9vw, 160px);
   font-family: Arial-Black, sans-serif;
   letter-spacing: 8px;
@@ -207,24 +205,30 @@ button:hover {
 }
 @media screen and (max-width: 952px) {
   .main__title {
-    left: 66px;
-    top: 96px;
+    top: 97px;
   }
 }
 .main__description {
-  position: absolute;
-  left: 782px;
-  top: 498px;
+  position: relative;
+  padding-bottom: clamp(0px, 9vw, 128px);
+  right: 35px;
+  top: -82px;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   max-width: 587px;
   gap: 14px;
   align-items: start;
 }
+@media screen and (max-width: 1440px) {
+  .main__description {
+    max-width: 363px;
+  }
+}
 @media screen and (max-width: 952px) {
   .main__description {
-    top: 110px;
-    left: 527px;
+    padding-bottom: 0;
+    top: 0;
   }
 }
 .main__description-inner {
@@ -249,32 +253,27 @@ button:hover {
 
 .art-wrapper {
   position: relative;
-  padding-top: 973px;
-}
-@media screen and (max-width: 952px) {
-  .art-wrapper {
-    padding-top: 817px;
-  }
 }
 .art-wrapper .art__title {
   font-family: Arial-Black, sans-serif;
   font-size: clamp(60px, 5vw, 80px);
-  position: absolute;
+  position: relative;
   z-index: 100;
-  top: 169px;
+  padding-top: 169px;
   line-height: 90px;
 }
 @media screen and (max-width: 952px) {
   .art-wrapper .art__title {
+    padding-top: 0px;
     top: 54px;
     line-height: 70px;
   }
 }
 .art-wrapper .art__description {
-  position: absolute;
+  position: relative;
   z-index: 50;
   left: 206px;
-  top: 72px;
+  top: -277px;
   border: 6px solid #ff8340;
   padding: 335px 27px 46px 25px;
   max-width: 562px;
@@ -288,7 +287,7 @@ button:hover {
     padding: 276px 39px 14px 26px;
     gap: 36px;
     left: 86px;
-    top: 16px;
+    top: -194px;
     max-width: 504px;
   }
 }
@@ -314,13 +313,7 @@ button:hover {
 .art-wrapper .art__logo {
   position: absolute;
   bottom: 0px;
-  left: 602px;
-}
-@media screen and (max-width: 952px) {
-  .art-wrapper .art__logo {
-    max-width: 596px;
-    left: 326px;
-  }
+  right: 0px;
 }
 
 .direction {

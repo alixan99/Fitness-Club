@@ -32,7 +32,14 @@
 
     <main class="main">
       <div class="main__wrapper container">
-        <img class="main__logo" src="./images/image_man.png" alt="logo_man" />
+        <picture>
+          <source
+            srcset="./images/image_man_low.png"
+            media="(max-width: 952px)"
+          />
+
+          <img class="main__logo" src="./images/image_man.png" alt="logo_man" />
+        </picture>
         <h1 class="main__title">ПОСТРОЙ СВОЕ ТЕЛО</h1>
         <div class="main__description">
           <p class="main__description-inner">
@@ -64,12 +71,17 @@
           </p>
           <button class="art__description-button">ЧИТАТЬ ДАЛЕЕ</button>
         </div>
-
-        <img
-          src="./images/image_woman.png"
-          alt="logo_woman"
-          class="art__logo"
-        />
+        <picture>
+          <source
+            srcset="./images/image_woman_low.png"
+            media="(max-width:952px)"
+          />
+          <img
+            src="./images/image_woman.png"
+            alt="logo_woman"
+            class="art__logo"
+          />
+        </picture>
       </div>
     </section>
 

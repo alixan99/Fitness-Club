@@ -2,10 +2,10 @@
   max-width: 1400px;
   margin: 0 auto;
 
-  @media screen and (max-width: 952px) {
-    max-width: 890px;
+  @media screen and (max-width:1440px) {
+    // max-width: clamp(890px, 90vw, 1400px);
+    padding: 0 32px;
   }
-
 }
 
 button {

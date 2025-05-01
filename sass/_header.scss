@@ -69,7 +69,7 @@
       color: $color_default;
       font-family: $font_roboto;
       font-size: $font_size_low;
-      padding: 11px 32px;
+      padding: 11px clamp(0px, 2vw, 32px);
 
       @media screen and (max-width: 952px) {
         display: none;
