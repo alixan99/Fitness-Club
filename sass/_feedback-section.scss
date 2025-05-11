@@ -1,0 +1,26 @@
+.feedback {
+  background-color: $color_hover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: $font_arial;
+    font-size: 45px;
+    line-height: 160px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  &__description {
+    font-family: $font_roboto;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  &__select {
+    background-color: $color_graphite;
+  }
+}

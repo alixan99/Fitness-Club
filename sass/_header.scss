@@ -28,8 +28,8 @@
       width: 48px;
       height: 48px;
       cursor: pointer;
-      background-color: #ffffff;
-      border: 1px solid #292929;
+      background-color: $color_white;
+      border: 1px solid $color_graphite;
       border-radius: 4px;
 
       &__btn {
@@ -37,7 +37,7 @@
         display: inline-block;
         height: 3px;
         width: 22px;
-        background-color: #292929;
+        background-color: $color_graphite;
 
         &::before {
           position: absolute;
@@ -46,7 +46,7 @@
           height: 3px;
           width: 22px;
           bottom: 7px;
-          background-color: #292929;
+          background-color: $color_graphite;
         }
 
         &::after {
@@ -56,7 +56,7 @@
           height: 3px;
           width: 22px;
           top: 7px;
-          background-color: #292929;
+          background-color: $color_graphite;
         }
       }
 
@@ -66,7 +66,7 @@
     }
 
     &-item {
-      color: $color_default;
+      color: $color_graphite;
       font-family: $font_roboto;
       font-size: $font_size_low;
       padding: 11px clamp(0px, 2vw, 32px);
@@ -77,11 +77,11 @@
       }
 
       &:hover {
-        color: $color_hover;
+        color: $color_orange;
       }
 
       &:active {
-        color: $color_active;
+        color: $color_brown;
       }
     }
   }
