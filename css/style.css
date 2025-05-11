@@ -431,7 +431,7 @@ button:hover {
 }
 .card-item__description {
   font-family: Roboto-Medium, sans-serif;
-  font-size: 20px;
+  font-size: clamp(16px, 1vw, 20px);
   letter-spacing: 2px;
   padding: 74px 0 36px 0;
   line-height: 23px;
@@ -439,6 +439,7 @@ button:hover {
 @media screen and (max-width: 1400px) {
   .card-item__description {
     max-width: 306px;
+    padding: 0;
   }
 }
 .card-item__pay {
@@ -449,7 +450,7 @@ button:hover {
 }
 .card-item__pay-price {
   font-family: Arial-Black, sans-serif;
-  font-size: 45px;
+  font-size: clamp(42px, 3vw, 45px);
   letter-spacing: 2px;
 }
 .card-item__pay-button {

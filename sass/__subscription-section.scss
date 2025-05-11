@@ -68,13 +68,14 @@
     }
     &__description {
       font-family: $font_roboto;
-      font-size: 20px;
+      font-size: clamp(16px, 1vw, 20px);
       letter-spacing: 2px;
       padding: 74px 0 36px 0;
       line-height: 23px;
 
       @media screen and (max-width: 1400px) {
         max-width: 306px;
+        padding: 0;
       }
     }
     &__pay {
@@ -84,7 +85,7 @@
       gap: 16px;
       &-price {
         font-family: $font_arial;
-        font-size: 45px;
+        font-size: clamp(42px, 3vw, 45px);
         letter-spacing: 2px;
       }
       &-button {
