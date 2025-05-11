@@ -3,10 +3,10 @@
 
   &__wrapper {
     position: relative;
-    padding-top: 816px;
+    padding-top: 82px;
 
     @media screen and (max-width: 952px) {
-      padding-top: 525px;
+      padding-top: 0px;
     }
   }
 
@@ -17,39 +17,42 @@
     z-index: 10;
 
     @media screen and (max-width: 952px) {
-      max-width: 624px;
-      left: -98px;
+      left: 0;
     }
   }
 
   &__title {
-    position: absolute;
-    bottom: 377px;
-    left: 219px;
+    position: relative;
+    padding-left: clamp(97px, 12vw, 219px);
     font-size: clamp(100px, 9vw, 160px);
     font-family: $font_arial;
     letter-spacing: 8px;
     color: #cfcfcd;
 
     @media screen and (max-width: 952px) {
-      left: 66px;
-      top: 96px;
+      top: 97px;
     }
   }
 
   &__description {
-    position: absolute;
-    left: 782px;
-    top: 498px;
+    position: relative;
+    padding-bottom: clamp(0px, 9vw, 128px);
+    right: 35px;
+    top: -82px;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     max-width: 587px;
     gap: 14px;
     align-items: start;
 
+    @media screen and (max-width: 1440px) {
+      max-width: 363px;
+    }
+
     @media screen and (max-width: 952px) {
-      top: 110px;
-      left: 527px;
+      padding-bottom: 0;
+      top: 0;
     }
 
     &-inner {
