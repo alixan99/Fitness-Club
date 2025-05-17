@@ -3,7 +3,7 @@
   font-size: clamp(60px, 5vw, 80px);
   color: $color_graphite;
   line-height: 90px;
-  padding: 140px 0 53px 0;
+  padding: clamp(53px, 7vw, 140px) 0 53px 0;
 }
 
 .card {

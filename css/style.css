@@ -320,12 +320,10 @@ button:hover {
 
 .direction {
   background-color: #292929;
-  padding: 124px 0 81px 0;
-}
-@media screen and (max-width: 952px) {
-  .direction {
-    padding: 53px 0;
-  }
+  padding: clamp(53px, 7vw, 124px) 0 clamp(53px, 5vw, 81px) 0;
+  /*   @media screen and (max-width: 952px) {
+      padding: 53px 0;
+    } */
 }
 .direction-wrapper {
   display: flex;
@@ -340,8 +338,8 @@ button:hover {
 .direction-wrapper__title {
   color: #ffffff;
   font-family: Arial-Black, sans-serif;
-  font-size: clamp(60px, 5vw, 80px);
-  line-height: 160px;
+  font-size: clamp(50px, 5vw, 80px);
+  line-height: clamp(60px, 9vw, 160px);
   letter-spacing: 4px;
 }
 @media screen and (max-width: 952px) {
@@ -361,25 +359,84 @@ button:hover {
 .feedback {
   background-color: #ff8340;
 }
-
-.form {
-  display: flex;
-  flex-direction: column;
-}
-.form__title {
+.feedback-wrapper__title {
   font-family: Arial-Black, sans-serif;
-  font-size: 45px;
-  line-height: 160px;
+  font-size: clamp(32px, 3vw, 45px);
+  line-height: clamp(32px, 9vw, 160px);
   letter-spacing: 2px;
   text-align: center;
 }
-.form__description {
+.feedback-wrapper__line {
+  width: 64px;
+  height: 6px;
+  background-color: #292929;
+  margin: 0 auto;
+}
+.feedback-wrapper__description {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-top: 50px;
+}
+.feedback .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: clamp(20px, 2vw, 40px) 0;
+  font-family: Roboto-Medium, sans-serif;
+  padding: 40px 0 clamp(32px, 10vw, 176px);
+}
+.feedback .form__select {
+  background-color: #292929;
+  color: #ffffff;
+  width: 49%;
+  padding: 18px 0 17px 34px;
   font-family: Roboto-Medium, sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
 }
-.form__select {
-  background-color: #292929;
+.feedback .form .input {
+  width: 49%;
+  padding: 18px 0 17px 34px;
+  color: #292929;
+  border: 2px solid #cfcfcd;
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.feedback .form .input::placeholder {
+  color: #b0b0b0;
+}
+.feedback .form__comment {
+  width: 100%;
+  padding: 18px 0 17px 34px;
+  resize: none;
+  height: 198px;
+  border: 2px solid #cfcfcd;
+  color: #292929;
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.feedback .form__comment::placeholder {
+  color: #b0b0b0;
+}
+.feedback .form__submit {
+  border: none;
+  background-color: transparent;
+  font-family: r Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #292929;
+  transition: 0.5s;
+  margin-left: auto;
+}
+.feedback .form__submit:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+.feedback .form__submit:active {
+  color: #843500;
 }
 
 .subscription__wrapper-title {
@@ -387,7 +444,7 @@ button:hover {
   font-size: clamp(60px, 5vw, 80px);
   color: #292929;
   line-height: 90px;
-  padding: 140px 0 53px 0;
+  padding: clamp(53px, 7vw, 140px) 0 53px 0;
 }
 
 .card {

@@ -1,26 +1,91 @@
 .feedback {
-  background-color: $color_hover;
-}
+  background-color: $color_orange;
 
-.form {
-  display: flex;
-  flex-direction: column;
-
-  &__title {
+  &-wrapper__title {
     font-family: $font_arial;
-    font-size: 45px;
-    line-height: 160px;
+    font-size: clamp(32px, 3vw, 45px);
+    line-height: clamp(32px, 9vw, 160px);
     letter-spacing: 2px;
     text-align: center;
   }
 
-  &__description {
+  &-wrapper__line {
+    width: 64px;
+    height: 6px;
+    background-color: $color_graphite;
+    margin: 0 auto;
+  }
+
+  &-wrapper__description {
     font-family: $font_roboto;
     font-size: 20px;
     letter-spacing: 2px;
+    padding-top: 50px;
   }
 
-  &__select {
-    background-color: $color_graphite;
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: clamp(20px, 2vw, 40px) 0;
+    font-family: $font_roboto;
+    padding: 40px 0 clamp(32px, 10vw, 176px);
+
+    &__select {
+      background-color: $color_graphite;
+      color: $color_white;
+      width: 49%;
+      padding: 18px 0 17px 34px;
+      font-family: $font_roboto;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .input {
+      width: 49%;
+      padding: 18px 0 17px 34px;
+      color: $color_graphite;
+      border: 2px solid #cfcfcd;
+      font-family: $font_roboto;
+      font-size: 20px;
+      letter-spacing: 2px;
+      &::placeholder {
+        color: $color_placeholder;
+      }
+    }
+
+    &__comment {
+      width: 100%;
+      padding: 18px 0 17px 34px;
+      resize: none;
+      height: 198px;
+      border: 2px solid #cfcfcd;
+      color: $color_graphite;
+      font-family: $font_roboto;
+      font-size: 20px;
+      letter-spacing: 2px;
+      &::placeholder {
+        color: $color_placeholder;
+      }
+    }
+
+    &__submit {
+      border: none;
+      background-color: transparent;
+      font-family: r$font_roboto;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: $color_graphite;
+      transition: 0.5s;
+      margin-left: auto;
+      &:hover {
+        color: $color_white;
+        cursor: pointer;
+      }
+
+      &:active {
+        color: $color_brown;
+      }
+    }
   }
 }
