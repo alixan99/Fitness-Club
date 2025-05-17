@@ -64,17 +64,17 @@
 
     &-button {
       padding: 11px 32px;
-      color: $color_default;
+      color: $color_graphite;
       font-size: $font_size_low;
       font-family: $font_roboto;
       letter-spacing: 2px;
 
       &:hover {
-        color: $color_hover;
+        color: $color_orange;
       }
 
       &:active {
-        color: $color_active;
+        color: $color_brown;
       }
     }
   }

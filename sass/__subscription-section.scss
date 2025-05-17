@@ -1,9 +1,9 @@
 .subscription__wrapper-title {
   font-family: $font_arial;
   font-size: clamp(60px, 5vw, 80px);
-  color: $color_default;
+  color: $color_graphite;
   line-height: 90px;
-  padding: 140px 0 53px 0;
+  padding: clamp(53px, 7vw, 140px) 0 53px 0;
 }
 
 .card {
@@ -23,7 +23,7 @@
     align-items: center;
     max-width: 24%;
     text-align: center;
-    border: 6px solid $color_default;
+    border: 6px solid $color_graphite;
     padding: 69px 38px 32px 38px;
     transition: 1s;
 
@@ -35,7 +35,7 @@
     }
 
     &:hover {
-      border-color: $color_hover;
+      border-color: $color_orange;
       transform: scale(1.11);
 
       @media screen and (max-width: 1400px) {
@@ -54,7 +54,7 @@
         font-family: $font_arial;
         font-size: 40px;
         color: #000000;
-        border: 4px solid $color_default;
+        border: 4px solid $color_graphite;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -63,7 +63,7 @@
       &-month {
         font-family: $font_arial;
         font-size: 20px;
-        color: $color_default;
+        color: $color_graphite;
       }
     }
     &__description {
@@ -94,11 +94,11 @@
         padding: 11px 0;
 
         &:hover {
-          color: $color_hover;
+          color: $color_orange;
         }
 
         &:active {
-          color: $color_active;
+          color: $color_brown;
         }
       }
     }

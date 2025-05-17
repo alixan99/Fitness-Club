@@ -21,7 +21,7 @@
     z-index: 50;
     left: 206px;
     top: -277px;
-    border: 6px solid $color_hover;
+    border: 6px solid $color_orange;
     padding: 335px 27px 46px 25px;
     max-width: 562px;
     display: flex;
@@ -46,17 +46,17 @@
 
     &-button {
       padding: 11px 32px;
-      color: $color_default;
+      color: $color_graphite;
       font-size: $font_size_low;
       font-family: $font_roboto;
       letter-spacing: 2px;
 
       &:hover {
-        color: $color_hover;
+        color: $color_orange;
       }
 
       &:active {
-        color: $color_active;
+        color: $color_brown;
       }
     }
   }

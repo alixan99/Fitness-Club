@@ -1,10 +1,10 @@
 .direction {
-  background-color: $color_default;
-  padding: 124px 0 81px 0;
+  background-color: $color_graphite;
+  padding: clamp(53px, 7vw, 124px) 0 clamp(53px, 5vw, 81px) 0;
 
-  @media screen and (max-width: 952px) {
+/*   @media screen and (max-width: 952px) {
     padding: 53px 0;
-  }
+  } */
 
   &-wrapper {
     display: flex;
@@ -18,8 +18,8 @@
     &__title {
       color: #ffffff;
       font-family: $font_arial;
-      font-size: clamp(60px, 5vw, 80px);
-      line-height: 160px;
+      font-size: clamp(50px, 5vw, 80px);
+      line-height: clamp(60px, 9vw, 160px);
       letter-spacing: 4px;
 
       @media screen and (max-width: 952px) {
