@@ -439,6 +439,54 @@ button:hover {
   color: #843500;
 }
 
+.system {
+  display: grid;
+  grid-template-areas: "header logo" "list logo";
+}
+.system-header {
+  grid-area: header;
+  padding: 124px 76px 41px 260px;
+}
+.system-header__title {
+  font-family: Arial-Black, sans-serif;
+  font-size: 80px;
+  line-height: 160px;
+  padding-bottom: 34px;
+  letter-spacing: 4px;
+}
+.system-header__description {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+.system-list {
+  grid-area: list;
+  display: flex;
+}
+.system-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 34px 18px;
+  text-align: center;
+  background-color: #FBFBFB;
+}
+.system-list__item-title {
+  font-family: Arial-Black, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.system-list__item-description {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.system-logo {
+  grid-area: logo;
+}
+
 .subscription__wrapper-title {
   font-family: Arial-Black, sans-serif;
   font-size: clamp(60px, 5vw, 80px);

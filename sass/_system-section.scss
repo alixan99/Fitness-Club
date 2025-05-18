@@ -1,0 +1,54 @@
+.system {
+  display: grid;
+  grid-template-areas: "header logo"
+                      "list logo";
+
+  &-header {
+    grid-area: header;
+    padding: 124px 76px 41px 260px;
+    &__title {
+      font-family: $font_arial;
+      font-size: 80px;
+      line-height: 160px;
+      padding-bottom: 34px;
+      letter-spacing: 4px;
+    }
+
+    &__description {
+      font-family: $font_roboto;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 23px;
+    }
+  }
+
+  &-list {
+    grid-area: list;
+    display: flex;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 38px 34px 18px;
+      text-align: center;
+      background-color: #FBFBFB;
+
+      &-title {
+        font-family: $font_arial;
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+
+      &-description {
+        font-family: $font_roboto;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  &-logo {
+    grid-area: logo;
+  }
+}
