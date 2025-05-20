@@ -439,6 +439,109 @@ button:hover {
   color: #843500;
 }
 
+.system {
+  display: grid;
+  grid-template-areas: "header logo" "list logo";
+}
+@media screen and (max-width: 1300px) {
+  .system {
+    grid-template-areas: "header logo" "list list" "list list";
+  }
+}
+.system-header {
+  grid-area: header;
+  padding: clamp(40px, 7vw, 124px) 76px clamp(0px, 3vw, 41px) clamp(32px, 14vw, 260px);
+}
+@media screen and (max-width: 1533px) {
+  .system-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 0 32px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .system-header {
+    justify-content: center;
+  }
+}
+.system-header__title {
+  font-family: Arial-Black, sans-serif;
+  font-size: clamp(60px, 5vw, 80px);
+  line-height: 160px;
+  padding-bottom: 34px;
+  letter-spacing: 4px;
+}
+.system-header__description {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 23px;
+}
+.system-list {
+  grid-area: list;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fbfbfb;
+}
+@media screen and (max-width: 1100px) {
+  .system-list {
+    flex-wrap: wrap;
+  }
+}
+.system-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 34px 18px;
+  text-align: center;
+}
+@media screen and (max-width: 1720px) {
+  .system-list__item {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .system-list__item {
+    padding: 38px 0 58px 0;
+    gap: 52px;
+  }
+}
+.system-list__item-title {
+  font-family: Arial-Black, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.system-list__item-description {
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1100px) {
+  .system-list .item_1 {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .system-list .item_2 {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .system-list .item_3 {
+    width: 100%;
+  }
+}
+.system-logo {
+  grid-area: logo;
+  background-color: red;
+}
+.system-logo img {
+  max-width: clamp(480px, 50vw, 960px);
+}
+
 .subscription__wrapper-title {
   font-family: Arial-Black, sans-serif;
   font-size: clamp(60px, 5vw, 80px);
