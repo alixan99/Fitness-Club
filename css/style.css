@@ -536,7 +536,6 @@ button:hover {
 }
 .system-logo {
   grid-area: logo;
-  background-color: red;
 }
 .system-logo img {
   max-width: clamp(480px, 50vw, 960px);
