@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Fitness-Club</title>
@@ -22,10 +27,10 @@
             <span class="hamburger__btn"></span>
           </button>
 
-          <a class="header__navigation-item" href="">О НАС</a>
-          <a class="header__navigation-item" href="">ТРЕНЕРЫ</a>
-          <a class="header__navigation-item" href="">АБОНЕМЕНТЫ</a>
-          <a class="header__navigation-item" href="">КОНТАКТЫ</a>
+          <a class="header__navigation-item" href="#about">О НАС</a>
+          <a class="header__navigation-item" href="#coaches">ТРЕНЕРЫ</a>
+          <a class="header__navigation-item" href="#subscription">АБОНЕМЕНТЫ</a>
+          <a class="header__navigation-item" href="#contacts">КОНТАКТЫ</a>
         </nav>
       </div>
     </header>
@@ -59,7 +64,7 @@
     <section class="art">
       <div class="container art-wrapper">
         <h2 class="art__title">ТВОЕ ТЕЛО - ПРОИЗВЕДЕНИЕ ИСКУССТВА</h2>
-        <div class="art__description">
+        <div class="art__description" id="about">
           <p class="art__description-inner">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -100,7 +105,7 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="contacts">
       <div class="feedback-wrapper container">
         <h2 class="feedback-wrapper__title">СВЯЖИТЕСЬ С НАМИ</h2>
         <div class="feedback-wrapper__line"></div>
@@ -225,9 +230,123 @@
       </picture>
     </section>
 
+    <section class="coaches">
+      <h2 class="coaches__header" id="coaches">ТРЕНЕРСКИЙ СОСТАВ</h2>
+      <!-- Slider main container -->
+      <div class="swiper coaches__list">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image1.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">ДЖЕСС ПАРКЕР</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image2.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">САРА КОННОР</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image3.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">ОРЛАНДО БЛУМ</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image4.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">АЛЕК БОЛДУИН</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image5.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">ТЕРМИ НАТОР</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image1.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">ДЖЕСС ПАРКЕР</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image2.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">САРА КОННОР</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image3.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">ОРЛАНДО БЛУМ</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image4.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">АЛЕК БОЛДУИН</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+
+          <div class="swiper-slide coaches__item">
+            <img
+              class="coaches__item-preview"
+              src="./images/сoaches/image5.png"
+              alt=""
+            />
+            <h3 class="coaches__item-title">ТЕРМИ НАТОР</h3>
+            <h4 class="coaches__item-subtitle">Персональный тренер</h4>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
     <section class="subscription">
       <div class="subscription__wrapper container">
-        <h2 class="subscription__wrapper-title">АБОНЕМЕНТ</h2>
+        <h2 class="subscription__wrapper-title" id="subscription">АБОНЕМЕНТ</h2>
         <div class="subscription__wrapper-card card">
           <div class="card-item">
             <div class="card-item__size">
@@ -291,5 +410,72 @@
         </div>
       </div>
     </section>
+
+    <section class="map">
+      <h2 class="map__title container">ДОБРО ПОЖАЛОВАТЬ!</h2>
+
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A890b876c05871205d6524aa0c97164231909b1cce6d65aec830a3291806af850&amp;source=constructor"
+        width="717"
+        height="680"
+        frameborder="0"
+      ></iframe>
+    </section>
+
+    <footer class="footer">
+      <nav class="container footer-wrapper">
+        <ul class="footer-wrapper__list">
+          <li class="footer-wrapper__item">
+            <a href="#about" class="footer-wrapper__item-link">О НАС</a>
+          </li>
+          <li class="footer-wrapper__item">
+            <a href="#coaches" class="footer-wrapper__item-link">ТРЕНЕРЫ</a>
+          </li>
+          <li class="footer-wrapper__item">
+            <a href="#subscription" class="footer-wrapper__item-link"
+              >АБОНЕМЕНТЫ</a
+            >
+          </li>
+          <li class="footer-wrapper__item">
+            <a href="#contacts" class="footer-wrapper__item-link">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__label">blvckdesign</div>
+      <div class="footer__year">2023</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 480px
+          760: {
+            slidesPerView: 3,
+          },
+          // when window width is >= 640px
+          1300: {
+            slidesPerView: 4,
+          },
+          1500: {
+            slidesPerView: 5,
+          },
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

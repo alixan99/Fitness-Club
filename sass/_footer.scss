@@ -1,0 +1,56 @@
+.footer {
+  &-wrapper {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 48px;
+    }
+
+    &__item {
+      padding: 11px 32px;
+      &:hover {
+        /* background-color: $color_orange; */
+        transition: 500ms;
+        border-radius: 10px;
+      }
+
+      &-link {
+        font-size: 20px;
+        font-family: $font_roboto;
+        color: $color_graphite;
+        text-decoration: none;
+        letter-spacing: 2px;
+        line-height: 23px;
+        &:hover {
+          color: $color_orange;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+
+  &__label {
+    max-width: 50%;
+    font-size: 20px;
+    font-family: $font_roboto;
+    color: $color_graphite;
+    letter-spacing: 2px;
+    line-height: 23px;
+    text-align: center;
+    margin: 44px auto 0px;
+
+    &:hover {
+      color: $color_orange;
+    }
+  }
+  &__year {
+    max-width: 50%;
+    font-size: 20px;
+    font-family: $font_roboto;
+    color: $color_graphite;
+    letter-spacing: 2px;
+    line-height: 23px;
+    text-align: center;
+    margin: 11px auto 11px;
+  }
+}
