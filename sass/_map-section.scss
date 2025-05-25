@@ -1,0 +1,12 @@
+.map {
+  &__title {
+    font-size: clamp(40px, 5vw, 80px);
+    font-family: $font_arial;
+    color: $color_graphite;
+    padding-top: clamp(53px, 6vw, 115px);
+    padding-bottom: clamp(23px, 3vw, 46px);
+  }
+  iframe {
+    width: 100%;
+  }
+}
